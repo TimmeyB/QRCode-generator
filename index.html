@@ -2,32 +2,30 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <style>
-     #qr-code-box {
-    width: 400px;
-    height: 400px;
-    border: 1px solid #000;
-    text-align: center;
-    background-color: skyblue;
-    margin: auto;
-    padding: 10px;
-
-}
-
-#qrcode {
-    margin: auto;
-    padding: 90px;
-}
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="qr-code-box">
-      <div id="qrcode"></div>
-  </div>
-  
- 
+    <div class="container">
+      <div class="image">
+        <img src="images/image-qr-code.png">
+      </div>
+      <div class="titleOfCard">
+  <h2>Improve your front-end skills by building projects</h2>
 
+  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Timmey</a>.
+  </p>
+</div>
     <script>
       var qrcode = new QRCode(document.getElementById("qrcode"), {
         text: "https://github.com",
