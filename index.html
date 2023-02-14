@@ -1,19 +1,42 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+     #qr-code-box {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: skyblue;
+    margin: auto;
+    padding: 10px;
+
+}
+
+#qrcode {
+    margin: auto;
+    padding: 90px;
+}
+    </style>
   </head>
   <body>
-    <div id="qrcode"></div>
+    <div id="qr-code-box">
+      <div id="qrcode"></div>
+  </div>
+  
+ 
 
     <script>
       var qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "https://github.com/",
-        width: 128,
-        height: 128,
+        text: "https://github.com",
+        width: 200,
+        height: 200,
         colorDark: "#000000",
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H
+      
       });
     </script>
   </body>
